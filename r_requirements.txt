@@ -1,0 +1,28 @@
+# R Package Requirements for Network Analysis
+# Install these packages in R using: install.packages(c("package1", "package2", ...))
+
+# Core network analysis packages
+qgraph
+bootnet
+mgm
+
+# Data manipulation and analysis
+dplyr
+tidyverse
+psych
+corrplot
+
+# Visualization
+ggplot2
+igraph
+RColorBrewer
+
+# Statistical analysis
+MASS
+Matrix
+corpcor
+
+# Additional utilities
+parallel
+doParallel
+foreach
