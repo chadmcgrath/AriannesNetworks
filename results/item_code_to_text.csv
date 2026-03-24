@@ -1,0 +1,110 @@
+item_code,base_code,facet,keying,item_text
+e141_R,E141,N1_Anxiety,negative (reversed),"Am relaxed most
+of the time."
+e150_R,E150,N1_Anxiety,negative (reversed),"Don't worry
+about things that have already happened."
+h1046_R,H1046,N1_Anxiety,negative (reversed),"Am not easily
+disturbed by events."
+h1157,H1157,N1_Anxiety,positive,"Worry about
+things."
+h2000_R,H2000,N1_Anxiety,negative (reversed),"Adapt easily to
+new situations."
+h968,H968,N1_Anxiety,positive,"Am afraid of
+many things."
+h999,H999,N1_Anxiety,positive,"Fear for the
+worst."
+x107,X107,N1_Anxiety,positive,"Get stressed
+out easily."
+x120,X120,N1_Anxiety,positive,"Get caught up
+in my problems."
+x138_R,X138,N1_Anxiety,negative (reversed),"Am not easily
+bothered by things."
+e120_R,E120,N2_Anger,negative (reversed),Rarely complain.
+h754,H754,N2_Anger,positive,"Get angry
+easily."
+h755,H755,N2_Anger,positive,Lose my temper.
+h761,H761,N2_Anger,positive,"Get irritated
+easily."
+x191_R,X191,N2_Anger,negative (reversed),Keep my cool.
+x23_R,X23,N2_Anger,negative (reversed),"Am not easily
+annoyed."
+x231_R,X231,N2_Anger,negative (reversed),Seldom get mad.
+x265_R,X265,N2_Anger,negative (reversed),"Rarely get
+irritated."
+x84,X84,N2_Anger,positive,"Am often in a
+bad mood."
+x95,X95,N2_Anger,positive,"Get upset
+easily."
+e92,E92,N3_Depression,positive,"Have frequent
+mood swings."
+h640,H640,N3_Depression,positive,"Am often down
+in the dumps."
+h646,H646,N3_Depression,positive,"Have a low
+opinion of myself."
+h737_R,H737,N3_Depression,negative (reversed),"Am very pleased
+with myself."
+h947,H947,N3_Depression,positive,Feel desperate.
+x129_R,X129,N3_Depression,negative (reversed),"Feel
+comfortable with myself."
+x15,X15,N3_Depression,positive,Dislike myself.
+x156_R,X156,N3_Depression,negative (reversed),"Seldom feel
+blue."
+x205,X205,N3_Depression,positive,"Feel that my
+life lacks direction."
+x74,X74,N3_Depression,positive,Often feel blue.
+h1197_R,H1197,N4_SelfConscious,negative (reversed),"Am able to
+stand up for myself."
+h1205,H1205,N4_SelfConscious,positive,"Stumble over my
+words."
+h592,H592,N4_SelfConscious,positive,"Find it
+difficult to approach others."
+h655,H655,N4_SelfConscious,positive,"Am afraid to
+draw attention to myself."
+h656,H656,N4_SelfConscious,positive,"Only feel
+comfortable with friends."
+h905,H905,N4_SelfConscious,positive,"Am afraid that
+I will do the wrong thing."
+h991,H991,N4_SelfConscious,positive,"Am easily
+intimidated."
+x197_R,X197,N4_SelfConscious,negative (reversed),"Am comfortable
+in unfamiliar situations."
+x209_R,X209,N4_SelfConscious,negative (reversed),"Am not bothered
+by difficult social situations."
+x242_R,X242,N4_SelfConscious,negative (reversed),"Am not
+embarrassed easily."
+e24,E24,N5_Immoderation,positive,"Do things that
+I later regret."
+e30_R,E30,N5_Immoderation,negative (reversed),Never splurge.
+e57,E57,N5_Immoderation,positive,"Don't know why
+I do some of the things I do."
+h2029,H2029,N5_Immoderation,positive,Love to eat.
+x133,X133,N5_Immoderation,positive,Go on binges.
+x145,X145,N5_Immoderation,positive,"Often eat too
+much."
+x181_R,X181,N5_Immoderation,negative (reversed),"Rarely
+overindulge."
+x216_R,X216,N5_Immoderation,negative (reversed),"Never spend
+more than I can afford."
+x251_R,X251,N5_Immoderation,negative (reversed),"Am able to
+control my cravings."
+x274_R,X274,N5_Immoderation,negative (reversed),"Easily resist
+temptations."
+e64_R,E64,N6_Vulnerability,negative (reversed),"Am calm even in
+tense situations."
+h1281_R,H1281,N6_Vulnerability,negative (reversed),"Know how to
+cope."
+h44_R,H44,N6_Vulnerability,negative (reversed),"Readily
+overcome setbacks."
+h470_R,H470,N6_Vulnerability,negative (reversed),"Can handle
+complex problems."
+h901,H901,N6_Vulnerability,positive,"Can't make up
+my mind."
+h948,H948,N6_Vulnerability,positive,Panic easily.
+h950,H950,N6_Vulnerability,positive,"Get overwhelmed
+by emotions."
+h954,H954,N6_Vulnerability,positive,"Feel that I'm
+unable to deal with things."
+h959,H959,N6_Vulnerability,positive,"Become
+overwhelmed by events."
+x79_R,X79,N6_Vulnerability,negative (reversed),"Remain calm
+under pressure."

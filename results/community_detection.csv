@@ -1,0 +1,110 @@
+item,item_text,assigned_facet,detected_community
+e141_R,"Am relaxed most
+of the time.",N1_Anxiety,1
+e150_R,"Don't worry
+about things that have already happened.",N1_Anxiety,1
+h1046_R,"Am not easily
+disturbed by events.",N1_Anxiety,1
+h1157,"Worry about
+things.",N1_Anxiety,1
+h2000_R,"Adapt easily to
+new situations.",N1_Anxiety,2
+h968,"Am afraid of
+many things.",N1_Anxiety,2
+h999,"Fear for the
+worst.",N1_Anxiety,2
+x107,"Get stressed
+out easily.",N1_Anxiety,1
+x120,"Get caught up
+in my problems.",N1_Anxiety,1
+x138_R,"Am not easily
+bothered by things.",N1_Anxiety,1
+e120_R,Rarely complain.,N2_Anger,1
+h754,"Get angry
+easily.",N2_Anger,1
+h755,Lose my temper.,N2_Anger,1
+h761,"Get irritated
+easily.",N2_Anger,1
+x191_R,Keep my cool.,N2_Anger,1
+x23_R,"Am not easily
+annoyed.",N2_Anger,1
+x231_R,Seldom get mad.,N2_Anger,1
+x265_R,"Rarely get
+irritated.",N2_Anger,1
+x84,"Am often in a
+bad mood.",N2_Anger,2
+x95,"Get upset
+easily.",N2_Anger,1
+e92,"Have frequent
+mood swings.",N3_Depression,1
+h640,"Am often down
+in the dumps.",N3_Depression,2
+h646,"Have a low
+opinion of myself.",N3_Depression,2
+h737_R,"Am very pleased
+with myself.",N3_Depression,2
+h947,Feel desperate.,N3_Depression,2
+x129_R,"Feel
+comfortable with myself.",N3_Depression,2
+x15,Dislike myself.,N3_Depression,2
+x156_R,"Seldom feel
+blue.",N3_Depression,2
+x205,"Feel that my
+life lacks direction.",N3_Depression,2
+x74,Often feel blue.,N3_Depression,2
+h1197_R,"Am able to
+stand up for myself.",N4_SelfConscious,2
+h1205,"Stumble over my
+words.",N4_SelfConscious,2
+h592,"Find it
+difficult to approach others.",N4_SelfConscious,2
+h655,"Am afraid to
+draw attention to myself.",N4_SelfConscious,2
+h656,"Only feel
+comfortable with friends.",N4_SelfConscious,2
+h905,"Am afraid that
+I will do the wrong thing.",N4_SelfConscious,2
+h991,"Am easily
+intimidated.",N4_SelfConscious,2
+x197_R,"Am comfortable
+in unfamiliar situations.",N4_SelfConscious,2
+x209_R,"Am not bothered
+by difficult social situations.",N4_SelfConscious,2
+x242_R,"Am not
+embarrassed easily.",N4_SelfConscious,2
+e24,"Do things that
+I later regret.",N5_Immoderation,3
+e30_R,Never splurge.,N5_Immoderation,3
+e57,"Don't know why
+I do some of the things I do.",N5_Immoderation,3
+h2029,Love to eat.,N5_Immoderation,3
+x133,Go on binges.,N5_Immoderation,3
+x145,"Often eat too
+much.",N5_Immoderation,3
+x181_R,"Rarely
+overindulge.",N5_Immoderation,3
+x216_R,"Never spend
+more than I can afford.",N5_Immoderation,3
+x251_R,"Am able to
+control my cravings.",N5_Immoderation,3
+x274_R,"Easily resist
+temptations.",N5_Immoderation,3
+e64_R,"Am calm even in
+tense situations.",N6_Vulnerability,1
+h1281_R,"Know how to
+cope.",N6_Vulnerability,2
+h44_R,"Readily
+overcome setbacks.",N6_Vulnerability,2
+h470_R,"Can handle
+complex problems.",N6_Vulnerability,2
+h901,"Can't make up
+my mind.",N6_Vulnerability,2
+h948,Panic easily.,N6_Vulnerability,2
+h950,"Get overwhelmed
+by emotions.",N6_Vulnerability,2
+h954,"Feel that I'm
+unable to deal with things.",N6_Vulnerability,2
+h959,"Become
+overwhelmed by events.",N6_Vulnerability,2
+x79_R,"Remain calm
+under pressure.",N6_Vulnerability,1

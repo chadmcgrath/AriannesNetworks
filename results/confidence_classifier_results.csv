@@ -1,0 +1,13 @@
+"facet","n_flagged","base_rate","model","precision","recall","AUC"
+"N1_Anxiety",22,4.5,"LogisticRegression",0.667,0.455,0.931
+"N1_Anxiety",22,4.5,"RandomForest",0.7,0.318,0.897
+"N2_Anger",25,5.1,"LogisticRegression",0.864,0.76,0.961
+"N2_Anger",25,5.1,"RandomForest",0.833,0.6,0.956
+"N3_Depression",23,4.7,"LogisticRegression",0.737,0.609,0.961
+"N3_Depression",23,4.7,"RandomForest",0.812,0.565,0.978
+"N4_SelfConscious",22,4.5,"LogisticRegression",0.5,0.364,0.947
+"N4_SelfConscious",22,4.5,"RandomForest",0.625,0.227,0.938
+"N5_Immoderation",11,2.3,"LogisticRegression",1,0.091,0.82
+"N5_Immoderation",11,2.3,"RandomForest",0.333,0.091,0.687
+"N6_Vulnerability",26,5.3,"LogisticRegression",0.778,0.808,0.985
+"N6_Vulnerability",26,5.3,"RandomForest",0.75,0.577,0.975

@@ -1,0 +1,16 @@
+"edge","raw","irt","discrim","disattenuated","change_raw_to_disatt","pct_change"
+"N1_Anxiety - N6_Vulnerability",0.6659,0.6598,0.6664,0.8022,0.1363,20.5
+"N4_SelfConscious - N6_Vulnerability",0.5649,0.5863,0.5682,0.6962,0.1313,23.2
+"N1_Anxiety - N4_SelfConscious",0.5211,0.5392,0.524,0.6396,0.1185,22.7
+"N3_Depression - N4_SelfConscious",0.5911,0.5893,0.5854,0.7042,0.1131,19.1
+"N1_Anxiety - N3_Depression",0.6831,0.6952,0.6856,0.7955,0.1124,16.5
+"N3_Depression - N6_Vulnerability",0.6427,0.6172,0.6321,0.7515,0.1088,16.9
+"N1_Anxiety - N2_Anger",0.6116,0.6051,0.6044,0.7123,0.1007,16.5
+"N3_Depression - N5_Immoderation",0.4605,0.475,0.4743,0.5563,0.0959,20.8
+"N5_Immoderation - N6_Vulnerability",0.3785,0.3734,0.3798,0.4731,0.0946,25
+"N1_Anxiety - N5_Immoderation",0.3532,0.3447,0.3558,0.4397,0.0865,24.5
+"N2_Anger - N5_Immoderation",0.405,0.3931,0.4026,0.4894,0.0844,20.8
+"N2_Anger - N6_Vulnerability",0.4573,0.4567,0.4489,0.5347,0.0774,16.9
+"N4_SelfConscious - N5_Immoderation",0.2719,0.2841,0.2966,0.3463,0.0744,27.3
+"N2_Anger - N3_Depression",0.5217,0.535,0.5169,0.5897,0.068,13
+"N2_Anger - N4_SelfConscious",0.335,0.3368,0.3286,0.3991,0.0641,19.1

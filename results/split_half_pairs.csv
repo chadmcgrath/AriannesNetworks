@@ -1,0 +1,712 @@
+facet,item_i,item_i_text,item_j,item_j_text,pair_r,pair_vs_rest_r
+N1_Anxiety,e141_R,"Am relaxed most
+of the time.",e150_R,"Don't worry
+about things that have already happened.",0.3740449669226829,0.526415992795292
+N1_Anxiety,e141_R,"Am relaxed most
+of the time.",h1046_R,"Am not easily
+disturbed by events.",0.2551316151974196,0.6215303434356475
+N1_Anxiety,e141_R,"Am relaxed most
+of the time.",h1157,"Worry about
+things.",0.2967408341502957,0.7044756356289179
+N1_Anxiety,e141_R,"Am relaxed most
+of the time.",h2000_R,"Adapt easily to
+new situations.",0.2621348206544875,0.5665999045552171
+N1_Anxiety,e141_R,"Am relaxed most
+of the time.",h968,"Am afraid of
+many things.",0.2117374794378506,0.6286354277899768
+N1_Anxiety,e141_R,"Am relaxed most
+of the time.",h999,"Fear for the
+worst.",0.3124972317826439,0.6206252991825486
+N1_Anxiety,e141_R,"Am relaxed most
+of the time.",x107,"Get stressed
+out easily.",0.4048218367924842,0.6232800680985169
+N1_Anxiety,e141_R,"Am relaxed most
+of the time.",x120,"Get caught up
+in my problems.",0.306813160733168,0.6524831503924852
+N1_Anxiety,e141_R,"Am relaxed most
+of the time.",x138_R,"Am not easily
+bothered by things.",0.3552184823865635,0.6247125821047531
+N1_Anxiety,e150_R,"Don't worry
+about things that have already happened.",h1046_R,"Am not easily
+disturbed by events.",0.2597610027674208,0.5904932017712249
+N1_Anxiety,e150_R,"Don't worry
+about things that have already happened.",h1157,"Worry about
+things.",0.3518786995250298,0.6446548560037796
+N1_Anxiety,e150_R,"Don't worry
+about things that have already happened.",h2000_R,"Adapt easily to
+new situations.",0.1600523934731161,0.5863845296779816
+N1_Anxiety,e150_R,"Don't worry
+about things that have already happened.",h968,"Am afraid of
+many things.",0.2166716056702766,0.5995029649643341
+N1_Anxiety,e150_R,"Don't worry
+about things that have already happened.",h999,"Fear for the
+worst.",0.2918918064026805,0.6023823854592106
+N1_Anxiety,e150_R,"Don't worry
+about things that have already happened.",x107,"Get stressed
+out easily.",0.2818799537145631,0.6555028433018931
+N1_Anxiety,e150_R,"Don't worry
+about things that have already happened.",x120,"Get caught up
+in my problems.",0.2888783096358029,0.6321398044461396
+N1_Anxiety,e150_R,"Don't worry
+about things that have already happened.",x138_R,"Am not easily
+bothered by things.",0.3548637643506515,0.5957557654625703
+N1_Anxiety,h1046_R,"Am not easily
+disturbed by events.",h1157,"Worry about
+things.",0.4028911225758021,0.6629656694297772
+N1_Anxiety,h1046_R,"Am not easily
+disturbed by events.",h2000_R,"Adapt easily to
+new situations.",0.2991952611168206,0.5622350944632089
+N1_Anxiety,h1046_R,"Am not easily
+disturbed by events.",h968,"Am afraid of
+many things.",0.2861121376339189,0.6014523249412755
+N1_Anxiety,h1046_R,"Am not easily
+disturbed by events.",h999,"Fear for the
+worst.",0.2764452421152572,0.6512855738126401
+N1_Anxiety,h1046_R,"Am not easily
+disturbed by events.",x107,"Get stressed
+out easily.",0.3261902069172941,0.6760378693645807
+N1_Anxiety,h1046_R,"Am not easily
+disturbed by events.",x120,"Get caught up
+in my problems.",0.3602488987717068,0.639387370230934
+N1_Anxiety,h1046_R,"Am not easily
+disturbed by events.",x138_R,"Am not easily
+bothered by things.",0.4050118778680007,0.6144724534709368
+N1_Anxiety,h1157,"Worry about
+things.",h2000_R,"Adapt easily to
+new situations.",0.3198028077718243,0.6569642997974979
+N1_Anxiety,h1157,"Worry about
+things.",h968,"Am afraid of
+many things.",0.3783430437142648,0.6543637088669411
+N1_Anxiety,h1157,"Worry about
+things.",h999,"Fear for the
+worst.",0.4604143292852388,0.6575577326362829
+N1_Anxiety,h1157,"Worry about
+things.",x107,"Get stressed
+out easily.",0.4421928628000253,0.7140293269235944
+N1_Anxiety,h1157,"Worry about
+things.",x120,"Get caught up
+in my problems.",0.4670841556634816,0.6825018780666523
+N1_Anxiety,h1157,"Worry about
+things.",x138_R,"Am not easily
+bothered by things.",0.4264778336792258,0.6992221492313139
+N1_Anxiety,h2000_R,"Adapt easily to
+new situations.",h968,"Am afraid of
+many things.",0.3149453432726287,0.5389323291218925
+N1_Anxiety,h2000_R,"Adapt easily to
+new situations.",h999,"Fear for the
+worst.",0.2915052046805432,0.5935895978669798
+N1_Anxiety,h2000_R,"Adapt easily to
+new situations.",x107,"Get stressed
+out easily.",0.301921269245326,0.6389236971083146
+N1_Anxiety,h2000_R,"Adapt easily to
+new situations.",x120,"Get caught up
+in my problems.",0.2555739744440126,0.6407967710367725
+N1_Anxiety,h2000_R,"Adapt easily to
+new situations.",x138_R,"Am not easily
+bothered by things.",0.2843341707125567,0.6232927123042618
+N1_Anxiety,h968,"Am afraid of
+many things.",h999,"Fear for the
+worst.",0.4390769555082306,0.5553629756293554
+N1_Anxiety,h968,"Am afraid of
+many things.",x107,"Get stressed
+out easily.",0.3458667776988318,0.6459483944754985
+N1_Anxiety,h968,"Am afraid of
+many things.",x120,"Get caught up
+in my problems.",0.3073513760483563,0.6464978442250268
+N1_Anxiety,h968,"Am afraid of
+many things.",x138_R,"Am not easily
+bothered by things.",0.2612584992779433,0.6677994988339706
+N1_Anxiety,h999,"Fear for the
+worst.",x107,"Get stressed
+out easily.",0.3677336085111348,0.6801337893748235
+N1_Anxiety,h999,"Fear for the
+worst.",x120,"Get caught up
+in my problems.",0.3311883723278656,0.679510832350922
+N1_Anxiety,h999,"Fear for the
+worst.",x138_R,"Am not easily
+bothered by things.",0.2724789389003968,0.70741184445096
+N1_Anxiety,x107,"Get stressed
+out easily.",x120,"Get caught up
+in my problems.",0.4869766057910288,0.6497933826428717
+N1_Anxiety,x107,"Get stressed
+out easily.",x138_R,"Am not easily
+bothered by things.",0.4288185512108591,0.6740664783455635
+N1_Anxiety,x120,"Get caught up
+in my problems.",x138_R,"Am not easily
+bothered by things.",0.4429617391611337,0.6483848941617792
+N2_Anger,e120_R,Rarely complain.,h754,"Get angry
+easily.",0.4167874270290406,0.7176661074455557
+N2_Anger,e120_R,Rarely complain.,h755,Lose my temper.,0.2835624741080711,0.6891884492485663
+N2_Anger,e120_R,Rarely complain.,h761,"Get irritated
+easily.",0.3994961291225323,0.6999894459416186
+N2_Anger,e120_R,Rarely complain.,x191_R,Keep my cool.,0.3239110026841708,0.6433687200157414
+N2_Anger,e120_R,Rarely complain.,x23_R,"Am not easily
+annoyed.",0.4057959745022529,0.6617431684678795
+N2_Anger,e120_R,Rarely complain.,x231_R,Seldom get mad.,0.3993193486854329,0.7133241533508273
+N2_Anger,e120_R,Rarely complain.,x265_R,"Rarely get
+irritated.",0.4009543934860452,0.7206977286305085
+N2_Anger,e120_R,Rarely complain.,x84,"Am often in a
+bad mood.",0.3108409849638826,0.643045466707312
+N2_Anger,e120_R,Rarely complain.,x95,"Get upset
+easily.",0.3773170375037456,0.691114272549386
+N2_Anger,h754,"Get angry
+easily.",h755,Lose my temper.,0.5681757025470576,0.6860966453072211
+N2_Anger,h754,"Get angry
+easily.",h761,"Get irritated
+easily.",0.6112653227513379,0.73407899779807
+N2_Anger,h754,"Get angry
+easily.",x191_R,Keep my cool.,0.425864930650523,0.7495329977789664
+N2_Anger,h754,"Get angry
+easily.",x23_R,"Am not easily
+annoyed.",0.4320823583397071,0.7890989627232645
+N2_Anger,h754,"Get angry
+easily.",x231_R,Seldom get mad.,0.5243448296505152,0.7903816753406632
+N2_Anger,h754,"Get angry
+easily.",x265_R,"Rarely get
+irritated.",0.4939614099121352,0.8150087542873354
+N2_Anger,h754,"Get angry
+easily.",x84,"Am often in a
+bad mood.",0.4235528764411846,0.7365420018064891
+N2_Anger,h754,"Get angry
+easily.",x95,"Get upset
+easily.",0.4940254495021113,0.7744588194461576
+N2_Anger,h755,Lose my temper.,h761,"Get irritated
+easily.",0.4568308862558298,0.712482783659256
+N2_Anger,h755,Lose my temper.,x191_R,Keep my cool.,0.3311425240998173,0.6851840265138618
+N2_Anger,h755,Lose my temper.,x23_R,"Am not easily
+annoyed.",0.3558124561888968,0.7282076150514992
+N2_Anger,h755,Lose my temper.,x231_R,Seldom get mad.,0.4720082545925242,0.718305505526789
+N2_Anger,h755,Lose my temper.,x265_R,"Rarely get
+irritated.",0.4052178272564499,0.7606155821977577
+N2_Anger,h755,Lose my temper.,x84,"Am often in a
+bad mood.",0.3630237325518997,0.662779885724482
+N2_Anger,h755,Lose my temper.,x95,"Get upset
+easily.",0.3999784012923926,0.7219000978201688
+N2_Anger,h761,"Get irritated
+easily.",x191_R,Keep my cool.,0.3687085543055531,0.7450194709575555
+N2_Anger,h761,"Get irritated
+easily.",x23_R,"Am not easily
+annoyed.",0.5131083551593937,0.7207767074707911
+N2_Anger,h761,"Get irritated
+easily.",x231_R,Seldom get mad.,0.4577081375316242,0.7964092076609846
+N2_Anger,h761,"Get irritated
+easily.",x265_R,"Rarely get
+irritated.",0.5401256926662003,0.7628270136759873
+N2_Anger,h761,"Get irritated
+easily.",x84,"Am often in a
+bad mood.",0.3657075666899499,0.7351665760168522
+N2_Anger,h761,"Get irritated
+easily.",x95,"Get upset
+easily.",0.450505698058671,0.7679876765445949
+N2_Anger,x191_R,Keep my cool.,x23_R,"Am not easily
+annoyed.",0.3829956728046538,0.7010691188097965
+N2_Anger,x191_R,Keep my cool.,x231_R,Seldom get mad.,0.4619973015048471,0.7185879846666259
+N2_Anger,x191_R,Keep my cool.,x265_R,"Rarely get
+irritated.",0.4400723678539284,0.7373404798588068
+N2_Anger,x191_R,Keep my cool.,x84,"Am often in a
+bad mood.",0.3142649063283471,0.666461513714812
+N2_Anger,x191_R,Keep my cool.,x95,"Get upset
+easily.",0.4674482521163606,0.6829615814550318
+N2_Anger,x23_R,"Am not easily
+annoyed.",x231_R,Seldom get mad.,0.4476895578225951,0.7668508000346088
+N2_Anger,x23_R,"Am not easily
+annoyed.",x265_R,"Rarely get
+irritated.",0.5275230744810251,0.7360631829026453
+N2_Anger,x23_R,"Am not easily
+annoyed.",x84,"Am often in a
+bad mood.",0.3856863480537961,0.6888360489091945
+N2_Anger,x23_R,"Am not easily
+annoyed.",x95,"Get upset
+easily.",0.4666217949181617,0.7254090375950834
+N2_Anger,x231_R,Seldom get mad.,x265_R,"Rarely get
+irritated.",0.6193712998418811,0.7384214695337412
+N2_Anger,x231_R,Seldom get mad.,x84,"Am often in a
+bad mood.",0.425912975562752,0.7210548094869793
+N2_Anger,x231_R,Seldom get mad.,x95,"Get upset
+easily.",0.4923779098745762,0.7609641550488381
+N2_Anger,x265_R,"Rarely get
+irritated.",x84,"Am often in a
+bad mood.",0.4191176043139982,0.7330942168683316
+N2_Anger,x265_R,"Rarely get
+irritated.",x95,"Get upset
+easily.",0.5122299280041804,0.7599122078972805
+N2_Anger,x84,"Am often in a
+bad mood.",x95,"Get upset
+easily.",0.4099813587012052,0.6947857498445532
+N3_Depression,e92,"Have frequent
+mood swings.",h640,"Am often down
+in the dumps.",0.4886150941391307,0.6825548959635802
+N3_Depression,e92,"Have frequent
+mood swings.",h646,"Have a low
+opinion of myself.",0.3289017600825562,0.7383153995482239
+N3_Depression,e92,"Have frequent
+mood swings.",h737_R,"Am very pleased
+with myself.",0.2535136910343402,0.7047021323104516
+N3_Depression,e92,"Have frequent
+mood swings.",h947,Feel desperate.,0.397819443792524,0.6695508348139817
+N3_Depression,e92,"Have frequent
+mood swings.",x129_R,"Feel
+comfortable with myself.",0.3268661765763904,0.7246722627811273
+N3_Depression,e92,"Have frequent
+mood swings.",x15,Dislike myself.,0.3898808907563248,0.7512427830726838
+N3_Depression,e92,"Have frequent
+mood swings.",x156_R,"Seldom feel
+blue.",0.5313588346056545,0.7048123341361512
+N3_Depression,e92,"Have frequent
+mood swings.",x205,"Feel that my
+life lacks direction.",0.3910360253836805,0.6797574000428722
+N3_Depression,e92,"Have frequent
+mood swings.",x74,Often feel blue.,0.5209707727444065,0.732719403364098
+N3_Depression,h640,"Am often down
+in the dumps.",h646,"Have a low
+opinion of myself.",0.4518582885638807,0.7273209071882649
+N3_Depression,h640,"Am often down
+in the dumps.",h737_R,"Am very pleased
+with myself.",0.3942667791818311,0.687398083119343
+N3_Depression,h640,"Am often down
+in the dumps.",h947,Feel desperate.,0.4700314408690888,0.6878798555033889
+N3_Depression,h640,"Am often down
+in the dumps.",x129_R,"Feel
+comfortable with myself.",0.3698496732418906,0.759795518680497
+N3_Depression,h640,"Am often down
+in the dumps.",x15,Dislike myself.,0.4348777970065413,0.7811232176569809
+N3_Depression,h640,"Am often down
+in the dumps.",x156_R,"Seldom feel
+blue.",0.5052454042629718,0.7664644523245575
+N3_Depression,h640,"Am often down
+in the dumps.",x205,"Feel that my
+life lacks direction.",0.3577355947762234,0.7483128490270381
+N3_Depression,h640,"Am often down
+in the dumps.",x74,Often feel blue.,0.5685014275520767,0.7579187849592824
+N3_Depression,h646,"Have a low
+opinion of myself.",h737_R,"Am very pleased
+with myself.",0.4804013994031087,0.6243937353221248
+N3_Depression,h646,"Have a low
+opinion of myself.",h947,Feel desperate.,0.4027119028422751,0.6950088901584076
+N3_Depression,h646,"Have a low
+opinion of myself.",x129_R,"Feel
+comfortable with myself.",0.4857403759434441,0.6852478985921245
+N3_Depression,h646,"Have a low
+opinion of myself.",x15,Dislike myself.,0.5412517869000658,0.708769524835999
+N3_Depression,h646,"Have a low
+opinion of myself.",x156_R,"Seldom feel
+blue.",0.4218846324338373,0.7880680526787105
+N3_Depression,h646,"Have a low
+opinion of myself.",x205,"Feel that my
+life lacks direction.",0.3980606129963799,0.7026454656619607
+N3_Depression,h646,"Have a low
+opinion of myself.",x74,Often feel blue.,0.4112499028634533,0.8181885942727889
+N3_Depression,h737_R,"Am very pleased
+with myself.",h947,Feel desperate.,0.3491435426874676,0.6474633413729685
+N3_Depression,h737_R,"Am very pleased
+with myself.",x129_R,"Feel
+comfortable with myself.",0.4289563754782601,0.6362462364931282
+N3_Depression,h737_R,"Am very pleased
+with myself.",x15,Dislike myself.,0.4059626532851753,0.7010407186126424
+N3_Depression,h737_R,"Am very pleased
+with myself.",x156_R,"Seldom feel
+blue.",0.3825513835237132,0.7384286860751571
+N3_Depression,h737_R,"Am very pleased
+with myself.",x205,"Feel that my
+life lacks direction.",0.287763540564431,0.6863277067574288
+N3_Depression,h737_R,"Am very pleased
+with myself.",x74,Often feel blue.,0.3587032407868349,0.7744035272318603
+N3_Depression,h947,Feel desperate.,x129_R,"Feel
+comfortable with myself.",0.2967049859746996,0.7342165390611924
+N3_Depression,h947,Feel desperate.,x15,Dislike myself.,0.4471463092379981,0.7212869030247616
+N3_Depression,h947,Feel desperate.,x156_R,"Seldom feel
+blue.",0.411656126379519,0.7612801656796623
+N3_Depression,h947,Feel desperate.,x205,"Feel that my
+life lacks direction.",0.3574916064012636,0.6877467024906015
+N3_Depression,h947,Feel desperate.,x74,Often feel blue.,0.4530369304335242,0.7654714436543978
+N3_Depression,x129_R,"Feel
+comfortable with myself.",x15,Dislike myself.,0.5868294967283499,0.6940156266050466
+N3_Depression,x129_R,"Feel
+comfortable with myself.",x156_R,"Seldom feel
+blue.",0.4682732530119635,0.7626375774090091
+N3_Depression,x129_R,"Feel
+comfortable with myself.",x205,"Feel that my
+life lacks direction.",0.4088409202132197,0.6876709361892476
+N3_Depression,x129_R,"Feel
+comfortable with myself.",x74,Often feel blue.,0.4857606163894408,0.780902162796778
+N3_Depression,x15,Dislike myself.,x156_R,"Seldom feel
+blue.",0.4743837966471562,0.8077359386160167
+N3_Depression,x15,Dislike myself.,x205,"Feel that my
+life lacks direction.",0.462665155682651,0.7157097571112475
+N3_Depression,x15,Dislike myself.,x74,Often feel blue.,0.5556448258432048,0.7926695613855423
+N3_Depression,x156_R,"Seldom feel
+blue.",x205,"Feel that my
+life lacks direction.",0.4869327297502839,0.72635250763522
+N3_Depression,x156_R,"Seldom feel
+blue.",x74,Often feel blue.,0.6896276364980787,0.7426552820542119
+N3_Depression,x205,"Feel that my
+life lacks direction.",x74,Often feel blue.,0.5123662512343907,0.7368894525914322
+N4_SelfConscious,h1197_R,"Am able to
+stand up for myself.",h1205,"Stumble over my
+words.",0.2190164557256058,0.4889776874599582
+N4_SelfConscious,h1197_R,"Am able to
+stand up for myself.",h592,"Find it
+difficult to approach others.",0.2285540180104951,0.5783623117361509
+N4_SelfConscious,h1197_R,"Am able to
+stand up for myself.",h655,"Am afraid to
+draw attention to myself.",0.2010322308754252,0.5458871864813657
+N4_SelfConscious,h1197_R,"Am able to
+stand up for myself.",h656,"Only feel
+comfortable with friends.",0.1534526003976515,0.5213678191141271
+N4_SelfConscious,h1197_R,"Am able to
+stand up for myself.",h905,"Am afraid that
+I will do the wrong thing.",0.2745927215005128,0.5359123581287175
+N4_SelfConscious,h1197_R,"Am able to
+stand up for myself.",h991,"Am easily
+intimidated.",0.393968067140761,0.5497442767203057
+N4_SelfConscious,h1197_R,"Am able to
+stand up for myself.",x197_R,"Am comfortable
+in unfamiliar situations.",0.2040310732719341,0.5721481560957492
+N4_SelfConscious,h1197_R,"Am able to
+stand up for myself.",x209_R,"Am not bothered
+by difficult social situations.",0.1703327359874091,0.5650844108485328
+N4_SelfConscious,h1197_R,"Am able to
+stand up for myself.",x242_R,"Am not
+embarrassed easily.",0.2390768351131207,0.568692334401922
+N4_SelfConscious,h1205,"Stumble over my
+words.",h592,"Find it
+difficult to approach others.",0.2566337960264019,0.5707730932998505
+N4_SelfConscious,h1205,"Stumble over my
+words.",h655,"Am afraid to
+draw attention to myself.",0.2374596015104233,0.5373354731089449
+N4_SelfConscious,h1205,"Stumble over my
+words.",h656,"Only feel
+comfortable with friends.",0.217569217049955,0.5040536328705322
+N4_SelfConscious,h1205,"Stumble over my
+words.",h905,"Am afraid that
+I will do the wrong thing.",0.264527522620625,0.5473618977194579
+N4_SelfConscious,h1205,"Stumble over my
+words.",h991,"Am easily
+intimidated.",0.3424439236130015,0.5711943644268761
+N4_SelfConscious,h1205,"Stumble over my
+words.",x197_R,"Am comfortable
+in unfamiliar situations.",0.1863463461216419,0.5896650608364195
+N4_SelfConscious,h1205,"Stumble over my
+words.",x209_R,"Am not bothered
+by difficult social situations.",0.1956110038408881,0.563203686926594
+N4_SelfConscious,h1205,"Stumble over my
+words.",x242_R,"Am not
+embarrassed easily.",0.2519527940916414,0.568467812627923
+N4_SelfConscious,h592,"Find it
+difficult to approach others.",h655,"Am afraid to
+draw attention to myself.",0.2818059492477148,0.6045700842874983
+N4_SelfConscious,h592,"Find it
+difficult to approach others.",h656,"Only feel
+comfortable with friends.",0.349336970917703,0.5288230539461738
+N4_SelfConscious,h592,"Find it
+difficult to approach others.",h905,"Am afraid that
+I will do the wrong thing.",0.272311230967821,0.6318583007061158
+N4_SelfConscious,h592,"Find it
+difficult to approach others.",h991,"Am easily
+intimidated.",0.3315029156303413,0.6659413268531462
+N4_SelfConscious,h592,"Find it
+difficult to approach others.",x197_R,"Am comfortable
+in unfamiliar situations.",0.3402267983138202,0.6000986610064234
+N4_SelfConscious,h592,"Find it
+difficult to approach others.",x209_R,"Am not bothered
+by difficult social situations.",0.3498182198821767,0.5733814442969729
+N4_SelfConscious,h592,"Find it
+difficult to approach others.",x242_R,"Am not
+embarrassed easily.",0.3388912235468557,0.6120505842288926
+N4_SelfConscious,h655,"Am afraid to
+draw attention to myself.",h656,"Only feel
+comfortable with friends.",0.260432543377837,0.5293323577199746
+N4_SelfConscious,h655,"Am afraid to
+draw attention to myself.",h905,"Am afraid that
+I will do the wrong thing.",0.3268790577024068,0.5612441162451547
+N4_SelfConscious,h655,"Am afraid to
+draw attention to myself.",h991,"Am easily
+intimidated.",0.3791362846926417,0.6002170272617077
+N4_SelfConscious,h655,"Am afraid to
+draw attention to myself.",x197_R,"Am comfortable
+in unfamiliar situations.",0.2393564976063639,0.6099908937167896
+N4_SelfConscious,h655,"Am afraid to
+draw attention to myself.",x209_R,"Am not bothered
+by difficult social situations.",0.2445348318768119,0.5849837135502199
+N4_SelfConscious,h655,"Am afraid to
+draw attention to myself.",x242_R,"Am not
+embarrassed easily.",0.296409656041013,0.5927165201372685
+N4_SelfConscious,h656,"Only feel
+comfortable with friends.",h905,"Am afraid that
+I will do the wrong thing.",0.2410365985374474,0.5625978566235551
+N4_SelfConscious,h656,"Only feel
+comfortable with friends.",h991,"Am easily
+intimidated.",0.2173432364433033,0.6415571294463788
+N4_SelfConscious,h656,"Only feel
+comfortable with friends.",x197_R,"Am comfortable
+in unfamiliar situations.",0.270028866907568,0.5503417132476137
+N4_SelfConscious,h656,"Only feel
+comfortable with friends.",x209_R,"Am not bothered
+by difficult social situations.",0.2604168408425423,0.5335586481359457
+N4_SelfConscious,h656,"Only feel
+comfortable with friends.",x242_R,"Am not
+embarrassed easily.",0.2078119802452851,0.5951162626426725
+N4_SelfConscious,h905,"Am afraid that
+I will do the wrong thing.",h991,"Am easily
+intimidated.",0.4334242910701621,0.5909554029697607
+N4_SelfConscious,h905,"Am afraid that
+I will do the wrong thing.",x197_R,"Am comfortable
+in unfamiliar situations.",0.3003654095606884,0.6001008885042337
+N4_SelfConscious,h905,"Am afraid that
+I will do the wrong thing.",x209_R,"Am not bothered
+by difficult social situations.",0.2147127144026555,0.6249012002095391
+N4_SelfConscious,h905,"Am afraid that
+I will do the wrong thing.",x242_R,"Am not
+embarrassed easily.",0.2973171794310109,0.6136909239826446
+N4_SelfConscious,h991,"Am easily
+intimidated.",x197_R,"Am comfortable
+in unfamiliar situations.",0.298865531917431,0.6687774839060834
+N4_SelfConscious,h991,"Am easily
+intimidated.",x209_R,"Am not bothered
+by difficult social situations.",0.2729332527923263,0.6598210106314829
+N4_SelfConscious,h991,"Am easily
+intimidated.",x242_R,"Am not
+embarrassed easily.",0.3822671381557272,0.6350709773727979
+N4_SelfConscious,x197_R,"Am comfortable
+in unfamiliar situations.",x209_R,"Am not bothered
+by difficult social situations.",0.4424933411861253,0.5157617658758213
+N4_SelfConscious,x197_R,"Am comfortable
+in unfamiliar situations.",x242_R,"Am not
+embarrassed easily.",0.3576073777027896,0.5876301899223162
+N4_SelfConscious,x209_R,"Am not bothered
+by difficult social situations.",x242_R,"Am not
+embarrassed easily.",0.3476080693667686,0.5706403228949821
+N5_Immoderation,e24,"Do things that
+I later regret.",e30_R,Never splurge.,0.1556746057777666,0.5002733977993645
+N5_Immoderation,e24,"Do things that
+I later regret.",e57,"Don't know why
+I do some of the things I do.",0.5225120731372113,0.4253368619526669
+N5_Immoderation,e24,"Do things that
+I later regret.",h2029,Love to eat.,0.1436360445095626,0.4822278959373214
+N5_Immoderation,e24,"Do things that
+I later regret.",x133,Go on binges.,0.1606285165010622,0.5643914583823016
+N5_Immoderation,e24,"Do things that
+I later regret.",x145,"Often eat too
+much.",0.3077639732905869,0.5952719478877617
+N5_Immoderation,e24,"Do things that
+I later regret.",x181_R,"Rarely
+overindulge.",0.2262858716013267,0.6555597267096215
+N5_Immoderation,e24,"Do things that
+I later regret.",x216_R,"Never spend
+more than I can afford.",0.1260563159140113,0.5324581108162494
+N5_Immoderation,e24,"Do things that
+I later regret.",x251_R,"Am able to
+control my cravings.",0.2532497830654704,0.5855122014660883
+N5_Immoderation,e24,"Do things that
+I later regret.",x274_R,"Easily resist
+temptations.",0.3072833371757583,0.5478959970337004
+N5_Immoderation,e30_R,Never splurge.,e57,"Don't know why
+I do some of the things I do.",0.2298548381993719,0.4898802570321083
+N5_Immoderation,e30_R,Never splurge.,h2029,Love to eat.,0.1725896387950491,0.4028703133851522
+N5_Immoderation,e30_R,Never splurge.,x133,Go on binges.,0.1255816789879967,0.5108329204722957
+N5_Immoderation,e30_R,Never splurge.,x145,"Often eat too
+much.",0.151146975992154,0.6158318437573523
+N5_Immoderation,e30_R,Never splurge.,x181_R,"Rarely
+overindulge.",0.2178015166977824,0.5883057595932754
+N5_Immoderation,e30_R,Never splurge.,x216_R,"Never spend
+more than I can afford.",0.3530512799604547,0.3645448845237233
+N5_Immoderation,e30_R,Never splurge.,x251_R,"Am able to
+control my cravings.",0.1416354790573536,0.5708984832761781
+N5_Immoderation,e30_R,Never splurge.,x274_R,"Easily resist
+temptations.",0.2187896084328147,0.5200583848399148
+N5_Immoderation,e57,"Don't know why
+I do some of the things I do.",h2029,Love to eat.,0.0805569445627051,0.5439368760660118
+N5_Immoderation,e57,"Don't know why
+I do some of the things I do.",x133,Go on binges.,0.3086963848447591,0.5147386290921772
+N5_Immoderation,e57,"Don't know why
+I do some of the things I do.",x145,"Often eat too
+much.",0.2819325819781238,0.6308194605224415
+N5_Immoderation,e57,"Don't know why
+I do some of the things I do.",x181_R,"Rarely
+overindulge.",0.2600439668508574,0.6581155383078497
+N5_Immoderation,e57,"Don't know why
+I do some of the things I do.",x216_R,"Never spend
+more than I can afford.",0.1994325112334572,0.5202807501492683
+N5_Immoderation,e57,"Don't know why
+I do some of the things I do.",x251_R,"Am able to
+control my cravings.",0.2258913012102703,0.6221388599967754
+N5_Immoderation,e57,"Don't know why
+I do some of the things I do.",x274_R,"Easily resist
+temptations.",0.2707164408830413,0.586902458922317
+N5_Immoderation,h2029,Love to eat.,x133,Go on binges.,0.1189487939984345,0.4897295912175552
+N5_Immoderation,h2029,Love to eat.,x145,"Often eat too
+much.",0.3904297677591583,0.4682261102864555
+N5_Immoderation,h2029,Love to eat.,x181_R,"Rarely
+overindulge.",0.2560867280224778,0.5447850926309935
+N5_Immoderation,h2029,Love to eat.,x216_R,"Never spend
+more than I can afford.",0.0859248452206144,0.4633762152290336
+N5_Immoderation,h2029,Love to eat.,x251_R,"Am able to
+control my cravings.",0.1627695408802967,0.5352454337260096
+N5_Immoderation,h2029,Love to eat.,x274_R,"Easily resist
+temptations.",0.1767693267168429,0.5165827352464399
+N5_Immoderation,x133,Go on binges.,x145,"Often eat too
+much.",0.2850123566427979,0.6044684154971326
+N5_Immoderation,x133,Go on binges.,x181_R,"Rarely
+overindulge.",0.3935565195454726,0.5653433511370605
+N5_Immoderation,x133,Go on binges.,x216_R,"Never spend
+more than I can afford.",0.2121092616646505,0.4845448943741033
+N5_Immoderation,x133,Go on binges.,x251_R,"Am able to
+control my cravings.",0.3054335525861635,0.5567784211640512
+N5_Immoderation,x133,Go on binges.,x274_R,"Easily resist
+temptations.",0.2698409812282897,0.5626623618186841
+N5_Immoderation,x145,"Often eat too
+much.",x181_R,"Rarely
+overindulge.",0.5143854042562278,0.5912578256696179
+N5_Immoderation,x145,"Often eat too
+much.",x216_R,"Never spend
+more than I can afford.",0.1789613883975809,0.6152074894452348
+N5_Immoderation,x145,"Often eat too
+much.",x251_R,"Am able to
+control my cravings.",0.4335625757132268,0.5893748984957706
+N5_Immoderation,x145,"Often eat too
+much.",x274_R,"Easily resist
+temptations.",0.274914896335908,0.6645977514034709
+N5_Immoderation,x181_R,"Rarely
+overindulge.",x216_R,"Never spend
+more than I can afford.",0.2926568874925153,0.5604347988117857
+N5_Immoderation,x181_R,"Rarely
+overindulge.",x251_R,"Am able to
+control my cravings.",0.3883952153858986,0.6323015844221738
+N5_Immoderation,x181_R,"Rarely
+overindulge.",x274_R,"Easily resist
+temptations.",0.3573209289239157,0.6376371116640173
+N5_Immoderation,x216_R,"Never spend
+more than I can afford.",x251_R,"Am able to
+control my cravings.",0.2292948337927259,0.5396456321537866
+N5_Immoderation,x216_R,"Never spend
+more than I can afford.",x274_R,"Easily resist
+temptations.",0.2231388934861556,0.531675849598143
+N5_Immoderation,x251_R,"Am able to
+control my cravings.",x274_R,"Easily resist
+temptations.",0.4744058749040897,0.5342592145795998
+N6_Vulnerability,e64_R,"Am calm even in
+tense situations.",h1281_R,"Know how to
+cope.",0.276634092885386,0.6084363665855861
+N6_Vulnerability,e64_R,"Am calm even in
+tense situations.",h44_R,"Readily
+overcome setbacks.",0.2516180676456638,0.5812285686898583
+N6_Vulnerability,e64_R,"Am calm even in
+tense situations.",h470_R,"Can handle
+complex problems.",0.3144632352294443,0.594467462128851
+N6_Vulnerability,e64_R,"Am calm even in
+tense situations.",h901,"Can't make up
+my mind.",0.1316940277413309,0.6303451458324179
+N6_Vulnerability,e64_R,"Am calm even in
+tense situations.",h948,Panic easily.,0.3864073872582166,0.6283457116923623
+N6_Vulnerability,e64_R,"Am calm even in
+tense situations.",h950,"Get overwhelmed
+by emotions.",0.2856661033652936,0.5977783249529396
+N6_Vulnerability,e64_R,"Am calm even in
+tense situations.",h954,"Feel that I'm
+unable to deal with things.",0.2513480842718941,0.6353290721473944
+N6_Vulnerability,e64_R,"Am calm even in
+tense situations.",h959,"Become
+overwhelmed by events.",0.3175572258626114,0.6505636147944865
+N6_Vulnerability,e64_R,"Am calm even in
+tense situations.",x79_R,"Remain calm
+under pressure.",0.5146554946239145,0.5381899786496803
+N6_Vulnerability,h1281_R,"Know how to
+cope.",h44_R,"Readily
+overcome setbacks.",0.3041629841147763,0.5917367440750062
+N6_Vulnerability,h1281_R,"Know how to
+cope.",h470_R,"Can handle
+complex problems.",0.4243603411557348,0.587406493854697
+N6_Vulnerability,h1281_R,"Know how to
+cope.",h901,"Can't make up
+my mind.",0.229606543690317,0.5994603385148942
+N6_Vulnerability,h1281_R,"Know how to
+cope.",h948,Panic easily.,0.3687488980662572,0.6767314953183309
+N6_Vulnerability,h1281_R,"Know how to
+cope.",h950,"Get overwhelmed
+by emotions.",0.2812882498094469,0.6254443323478851
+N6_Vulnerability,h1281_R,"Know how to
+cope.",h954,"Feel that I'm
+unable to deal with things.",0.3644737450454608,0.6117775693138139
+N6_Vulnerability,h1281_R,"Know how to
+cope.",h959,"Become
+overwhelmed by events.",0.3427938272978923,0.6734359237252167
+N6_Vulnerability,h1281_R,"Know how to
+cope.",x79_R,"Remain calm
+under pressure.",0.3874565629623621,0.6343088525957447
+N6_Vulnerability,h44_R,"Readily
+overcome setbacks.",h470_R,"Can handle
+complex problems.",0.3135154911824426,0.5921757851214858
+N6_Vulnerability,h44_R,"Readily
+overcome setbacks.",h901,"Can't make up
+my mind.",0.1526297315024492,0.5980505256844086
+N6_Vulnerability,h44_R,"Readily
+overcome setbacks.",h948,Panic easily.,0.3183728492162362,0.6614589708101336
+N6_Vulnerability,h44_R,"Readily
+overcome setbacks.",h950,"Get overwhelmed
+by emotions.",0.281130544910973,0.5883689517475187
+N6_Vulnerability,h44_R,"Readily
+overcome setbacks.",h954,"Feel that I'm
+unable to deal with things.",0.3733868877953872,0.5697037991045085
+N6_Vulnerability,h44_R,"Readily
+overcome setbacks.",h959,"Become
+overwhelmed by events.",0.3178826525838493,0.6463395835660616
+N6_Vulnerability,h44_R,"Readily
+overcome setbacks.",x79_R,"Remain calm
+under pressure.",0.3392299457681725,0.615385034161247
+N6_Vulnerability,h470_R,"Can handle
+complex problems.",h901,"Can't make up
+my mind.",0.342610203110173,0.5509884831988965
+N6_Vulnerability,h470_R,"Can handle
+complex problems.",h948,Panic easily.,0.369193551638022,0.681457449538125
+N6_Vulnerability,h470_R,"Can handle
+complex problems.",h950,"Get overwhelmed
+by emotions.",0.2345968449913271,0.6521107800636089
+N6_Vulnerability,h470_R,"Can handle
+complex problems.",h954,"Feel that I'm
+unable to deal with things.",0.2772430541823285,0.6572473974765778
+N6_Vulnerability,h470_R,"Can handle
+complex problems.",h959,"Become
+overwhelmed by events.",0.344313366534268,0.6772492378670885
+N6_Vulnerability,h470_R,"Can handle
+complex problems.",x79_R,"Remain calm
+under pressure.",0.3990280750394092,0.6343565956207179
+N6_Vulnerability,h901,"Can't make up
+my mind.",h948,Panic easily.,0.358129071839624,0.6127126041536864
+N6_Vulnerability,h901,"Can't make up
+my mind.",h950,"Get overwhelmed
+by emotions.",0.2767686972582867,0.5752008213943465
+N6_Vulnerability,h901,"Can't make up
+my mind.",h954,"Feel that I'm
+unable to deal with things.",0.3496263634158896,0.5558799014980832
+N6_Vulnerability,h901,"Can't make up
+my mind.",h959,"Become
+overwhelmed by events.",0.3944801038449115,0.5813111106330643
+N6_Vulnerability,h901,"Can't make up
+my mind.",x79_R,"Remain calm
+under pressure.",0.2483286603247211,0.6308537832129555
+N6_Vulnerability,h948,Panic easily.,h950,"Get overwhelmed
+by emotions.",0.4026778155424645,0.6349285393661754
+N6_Vulnerability,h948,Panic easily.,h954,"Feel that I'm
+unable to deal with things.",0.3740271534779154,0.6774063147842019
+N6_Vulnerability,h948,Panic easily.,h959,"Become
+overwhelmed by events.",0.4226410166144325,0.7007869917300962
+N6_Vulnerability,h948,Panic easily.,x79_R,"Remain calm
+under pressure.",0.4117795980013004,0.6907548158662271
+N6_Vulnerability,h950,"Get overwhelmed
+by emotions.",h954,"Feel that I'm
+unable to deal with things.",0.3246177427449986,0.6162615633950498
+N6_Vulnerability,h950,"Get overwhelmed
+by emotions.",h959,"Become
+overwhelmed by events.",0.4218913623029816,0.6113733638109594
+N6_Vulnerability,h950,"Get overwhelmed
+by emotions.",x79_R,"Remain calm
+under pressure.",0.3099164451605866,0.6488487268190534
+N6_Vulnerability,h954,"Feel that I'm
+unable to deal with things.",h959,"Become
+overwhelmed by events.",0.3893865266021682,0.6546510924608436
+N6_Vulnerability,h954,"Feel that I'm
+unable to deal with things.",x79_R,"Remain calm
+under pressure.",0.2865379240451176,0.68774289954791
+N6_Vulnerability,h959,"Become
+overwhelmed by events.",x79_R,"Remain calm
+under pressure.",0.3406506140549621,0.7114576907571009

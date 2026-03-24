@@ -1,0 +1,110 @@
+facet,item,item_text,rf_impurity_importance,rf_permutation_importance,impurity_pct,perm_pct
+N1_Anxiety,h1157,"Worry about
+things.",52.9002178698384,0.127880339899706,24.62,38.3
+N1_Anxiety,h968,"Am afraid of
+many things.",35.4694408733506,0.0700610724763156,16.51,20.98
+N1_Anxiety,h999,"Fear for the
+worst.",26.0409486339291,0.036286319605308,12.12,10.87
+N1_Anxiety,h1046_R,"Am not easily
+disturbed by events.",15.266922817479,0.021421858613488,7.11,6.42
+N1_Anxiety,x138_R,"Am not easily
+bothered by things.",18.0068135991501,0.0199449262374057,8.38,5.97
+N1_Anxiety,x107,"Get stressed
+out easily.",17.8624045794779,0.0196484354473043,8.31,5.88
+N1_Anxiety,e141_R,"Am relaxed most
+of the time.",16.4960597387829,0.0191349190658676,7.68,5.73
+N1_Anxiety,x120,"Get caught up
+in my problems.",12.3382124630733,0.0121188379979904,5.74,3.63
+N1_Anxiety,e150_R,"Don't worry
+about things that have already happened.",12.3817402872076,0.0073432229234504,5.76,2.2
+N1_Anxiety,h2000_R,"Adapt easily to
+new situations.",8.08444854169191,9.0063630744054e-05,3.76,0.03
+N2_Anger,h754,"Get angry
+easily.",33.1816925028369,0.044269414622464,19.62,19.62
+N2_Anger,x265_R,"Rarely get
+irritated.",18.454914399062,0.0345661210896808,10.91,15.32
+N2_Anger,h755,Lose my temper.,20.1839675472421,0.027749376193892,11.93,12.3
+N2_Anger,x231_R,Seldom get mad.,20.0957796956999,0.0253457196804719,11.88,11.23
+N2_Anger,x84,"Am often in a
+bad mood.",11.8113464690757,0.0192627593337062,6.98,8.54
+N2_Anger,x95,"Get upset
+easily.",20.1731639747588,0.019178642794928,11.93,8.5
+N2_Anger,h761,"Get irritated
+easily.",15.2120625961266,0.0191176888156143,8.99,8.47
+N2_Anger,x23_R,"Am not easily
+annoyed.",10.760785762489,0.0164947210633313,6.36,7.31
+N2_Anger,x191_R,Keep my cool.,8.42886699510568,0.0098931368951881,4.98,4.38
+N2_Anger,e120_R,Rarely complain.,10.8433085895827,0.0098103216996206,6.41,4.35
+N3_Depression,x74,Often feel blue.,44.275735132374,0.0578843236981447,17.63,17.56
+N3_Depression,h646,"Have a low
+opinion of myself.",29.7641215778696,0.0514320031102545,11.85,15.6
+N3_Depression,x15,Dislike myself.,39.2610083838111,0.0481448297082896,15.63,14.6
+N3_Depression,e92,"Have frequent
+mood swings.",19.4395519079097,0.0372745560927424,7.74,11.31
+N3_Depression,h640,"Am often down
+in the dumps.",27.2221969558617,0.0356326839946654,10.84,10.81
+N3_Depression,x156_R,"Seldom feel
+blue.",27.3405051760084,0.0336299999414835,10.88,10.2
+N3_Depression,h947,Feel desperate.,23.0406664557639,0.0301101378904804,9.17,9.13
+N3_Depression,x205,"Feel that my
+life lacks direction.",17.9164563355761,0.0167691930116283,7.13,5.09
+N3_Depression,h737_R,"Am very pleased
+with myself.",14.2207243477298,0.0111598226031311,5.66,3.39
+N3_Depression,x129_R,"Feel
+comfortable with myself.",8.70833496795633,0.0076361975833643,3.47,2.32
+N4_SelfConscious,h905,"Am afraid that
+I will do the wrong thing.",34.2818646018659,0.0693964556929939,19.62,28.72
+N4_SelfConscious,h991,"Am easily
+intimidated.",27.8328991779148,0.0493958019750967,15.93,20.44
+N4_SelfConscious,h592,"Find it
+difficult to approach others.",20.761917526416,0.0306487074395975,11.88,12.68
+N4_SelfConscious,h655,"Am afraid to
+draw attention to myself.",15.4573920426741,0.0192257938474523,8.85,7.96
+N4_SelfConscious,x242_R,"Am not
+embarrassed easily.",15.3632189306036,0.0159405277476531,8.79,6.6
+N4_SelfConscious,x209_R,"Am not bothered
+by difficult social situations.",12.2237052150207,0.0151265701473064,7.0,6.26
+N4_SelfConscious,h656,"Only feel
+comfortable with friends.",13.3112847645059,0.0138712261524871,7.62,5.74
+N4_SelfConscious,h1205,"Stumble over my
+words.",11.6830429809527,0.0111020444017858,6.69,4.59
+N4_SelfConscious,x197_R,"Am comfortable
+in unfamiliar situations.",12.5502956030204,0.009866979168242,7.18,4.08
+N4_SelfConscious,h1197_R,"Am able to
+stand up for myself.",11.2781748793671,0.0070401753544802,6.45,2.91
+N5_Immoderation,x274_R,"Easily resist
+temptations.",24.5903057156667,0.0496483212358634,16.35,22.76
+N5_Immoderation,x145,"Often eat too
+much.",26.4201658866088,0.0442745387184268,17.57,20.3
+N5_Immoderation,e24,"Do things that
+I later regret.",14.0296553237744,0.0261978291879751,9.33,12.01
+N5_Immoderation,x251_R,"Am able to
+control my cravings.",13.8915475108168,0.0195307518712347,9.24,8.95
+N5_Immoderation,x181_R,"Rarely
+overindulge.",16.8652272258331,0.0182960439766639,11.21,8.39
+N5_Immoderation,e57,"Don't know why
+I do some of the things I do.",12.3610433725155,0.0148381060449201,8.22,6.8
+N5_Immoderation,e30_R,Never splurge.,11.0012947253895,0.0124076447421357,7.32,5.69
+N5_Immoderation,h2029,Love to eat.,12.5420669231894,0.0120602814341332,8.34,5.53
+N5_Immoderation,x133,Go on binges.,9.43525693354032,0.0108919598850179,6.27,4.99
+N5_Immoderation,x216_R,"Never spend
+more than I can afford.",9.25149859424673,0.0099719435462434,6.15,4.57
+N6_Vulnerability,h948,Panic easily.,23.6329042676994,0.0350113747512674,19.13,23.4
+N6_Vulnerability,x79_R,"Remain calm
+under pressure.",15.7314984278538,0.0217108575027023,12.73,14.51
+N6_Vulnerability,h901,"Can't make up
+my mind.",13.1275497454813,0.0196173653949984,10.62,13.11
+N6_Vulnerability,h954,"Feel that I'm
+unable to deal with things.",13.2802619244759,0.0173250419905259,10.75,11.58
+N6_Vulnerability,h959,"Become
+overwhelmed by events.",16.669364953073,0.0172766016071468,13.49,11.55
+N6_Vulnerability,h1281_R,"Know how to
+cope.",12.4255001403861,0.0141655558334613,10.06,9.47
+N6_Vulnerability,h950,"Get overwhelmed
+by emotions.",7.97777528327849,0.0096253945623355,6.46,6.43
+N6_Vulnerability,e64_R,"Am calm even in
+tense situations.",7.1669836405342,0.0068616148392234,5.8,4.59
+N6_Vulnerability,h44_R,"Readily
+overcome setbacks.",7.07176119990842,0.0047774015044727,5.72,3.19
+N6_Vulnerability,h470_R,"Can handle
+complex problems.",6.4698321663677,0.0032291752132298,5.24,2.16

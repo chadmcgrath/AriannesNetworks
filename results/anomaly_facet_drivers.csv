@@ -1,0 +1,7 @@
+facet,anom_mean_abs_resid,normal_mean_abs_resid,ratio
+N1_Anxiety,0.7278,0.6503,1.119
+N2_Anger,0.6759,0.5543,1.22
+N3_Depression,0.8122,0.5676,1.431
+N4_SelfConscious,0.8857,0.7031,1.26
+N5_Immoderation,0.9269,0.7311,1.268
+N6_Vulnerability,0.8921,0.5744,1.553
