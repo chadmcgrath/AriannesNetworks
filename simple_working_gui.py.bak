@@ -1,0 +1,347 @@
+﻿#!/usr/bin/env python3
+"""
+AriannesNetworks GUI - Personality Network Analysis
+Run R scripts or view existing results.
+"""
+
+import tkinter as tk
+from tkinter import ttk, messagebox, scrolledtext
+import sys
+from pathlib import Path
+import pandas as pd
+import subprocess
+import threading
+import os
+import shutil
+import glob
+
+# Try to import pyreadr for RData file reading
+try:
+    import pyreadr
+    PYREADR_AVAILABLE = True
+except ImportError:
+    PYREADR_AVAILABLE = False
+
+# Suppress matplotlib/plotly imports that aren't needed for basic GUI operation
+sys.path.append(str(Path(__file__).parent / "src"))
+
+PROJECT_ROOT = Path(__file__).parent
+RESULTS_DIR = PROJECT_ROOT / "results"
+DATA_DIR = PROJECT_ROOT / "data"
+
+
+class SimpleGUI:
+    def __init__(self, root):
+        self.root = root
+        self.root.title("AriannesNetworks - Personality Network Analysis")
+        self.root.geometry("1200x820")
+
+        self.r_process = None
+        self.r_output_thread = None
+
+        # R script mappings
+        self.r_scripts = {
+            "Neuroticism - Full Analysis (P0-P3)": "run_all_analysis_N.R",
+            "Agreeableness - Full Analysis (P0-P3)": "run_all_analysis_A.R",
+            "P1 - Data Pre-processing (Neuroticism)": "r_scripts/NEO & IPIP - P1 - data pre-processing & whole-sample_N.R",
+            "P1 - Data Pre-processing (Agreeableness)": "r_scripts/NEO & IPIP - P1 - data pre-processing & whole-sample_NEOCA.R",
+            "P2 - Resampling (Neuroticism)": "r_scripts/NEO & IPIP - P2 - resampling_N.R",
+            "P2 - Resampling (Agreeableness)": "r_scripts/NEO & IPIP - P2 - resampling_A.R",
+            "P3 - Network Analysis (Neuroticism)": "r_scripts/NEO & IPIP - P3 - netcompare & analysis_N.R",
+            "P3 - Network Analysis (Agreeableness)": "r_scripts/NEO & IPIP - P3 - netcompare & analysis_A.R",
+        }
+
+        # RData file mappings
+        self.rdata_files = {
+            "P1 Data - Neuroticism": "data/NEO & IPIP - P1_nSim50_data_N.RData",
+            "P1 Data - Agreeableness": "data/NEO & IPIP - P1_nSim50_data_A.RData",
+            "P2 Data - Neuroticism": "data/NEO & IPIP - P2_nSim50_data_N.RData",
+            "P2 Data - Agreeableness": "data/NEO & IPIP - P2_nSim50_data_A.RData",
+            "P3 Results - Neuroticism": "data/NEO & IPIP - P3_nSim50_results_all_N.RData",
+            "P3 Results - Agreeableness": "data/NEO & IPIP - P3_nSim50_results_all_A.RData",
+        }
+
+        # CSV results files (auto-discover)
+        self.csv_results = self._discover_csv_results()
+
+        self.create_widgets()
+        self.setup_layout()
+
+    def _discover_csv_results(self):
+        """Auto-discover CSV files in results/ folder."""
+        results = {}
+        if RESULTS_DIR.exists():
+            for f in sorted(RESULTS_DIR.glob("*.csv")):
+                results[f.name] = str(f)
+        return results
+        
+    def create_widgets(self):
+        """Create all GUI widgets."""
+        self.main_frame = ttk.Frame(self.root, padding="10")
+
+        # Title
+        self.title_label = ttk.Label(
+            self.main_frame,
+            text="AriannesNetworks - Personality Network Analysis",
+            font=('Arial', 14, 'bold')
+        )
+
+        # â”€â”€ TOP PANEL: two side-by-side control boxes â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+        self.top_panel = ttk.Frame(self.main_frame)
+
+        # Left box: Run R Analysis
+        self.r_frame = ttk.LabelFrame(self.top_panel, text="Run R Analysis", padding="10")
+        self.script_label = ttk.Label(self.r_frame, text="Script:")
+        self.script_var = tk.StringVar(value="Neuroticism - Full Analysis (P0-P3)")
+        self.script_combo = ttk.Combobox(
+            self.r_frame, textvariable=self.script_var,
+            values=list(self.r_scripts.keys()), state="readonly", width=42
+        )
+        self.run_r_btn = ttk.Button(self.r_frame, text="Run R Script", command=self.on_run_r)
+        self.stop_r_btn = ttk.Button(self.r_frame, text="Stop", command=self.stop_r, state="disabled")
+
+        # Right box: View Results
+        self.view_frame = ttk.LabelFrame(self.top_panel, text="View Results", padding="10")
+
+        # RData row
+        self.rdata_label = ttk.Label(self.view_frame, text="RData file:")
+        self.rdata_var = tk.StringVar(value=list(self.rdata_files.keys())[4])  # P3 Neuroticism
+        self.rdata_combo = ttk.Combobox(
+            self.view_frame, textvariable=self.rdata_var,
+            values=list(self.rdata_files.keys()), state="readonly", width=32
+        )
+        self.view_rdata_btn = ttk.Button(self.view_frame, text="View RData", command=self.on_view_rdata)
+
+        # CSV row
+        self.csv_label = ttk.Label(self.view_frame, text="Results CSV:")
+        csv_names = list(self.csv_results.keys()) if self.csv_results else ["(none found)"]
+        self.csv_var = tk.StringVar(value=csv_names[0])
+        self.csv_combo = ttk.Combobox(
+            self.view_frame, textvariable=self.csv_var,
+            values=csv_names, state="readonly", width=32
+        )
+        self.view_csv_btn = ttk.Button(self.view_frame, text="View CSV", command=self.on_view_csv)
+
+        # â”€â”€ STATUS BAR â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+        self.status_var = tk.StringVar(value="Ready")
+        self.status_label = ttk.Label(self.main_frame, textvariable=self.status_var, relief="sunken", anchor="w")
+
+        # â”€â”€ RESULTS NOTEBOOK â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+        self.notebook = ttk.Notebook(self.main_frame)
+
+        self.r_output_tab = ttk.Frame(self.notebook)
+        self.r_output_text = scrolledtext.ScrolledText(self.r_output_tab, font=("Courier", 9))
+
+        self.results_tab = ttk.Frame(self.notebook)
+        self.results_text = scrolledtext.ScrolledText(self.results_tab, font=("Courier", 9))
+
+        self.notebook.add(self.r_output_tab, text="R Output")
+        self.notebook.add(self.results_tab, text="Results Viewer")
+        
+    def setup_layout(self):
+        """Set up the layout."""
+        self.main_frame.grid(row=0, column=0, sticky="nsew")
+        self.root.columnconfigure(0, weight=1)
+        self.root.rowconfigure(0, weight=1)
+        self.main_frame.columnconfigure(0, weight=1)
+        self.main_frame.rowconfigure(2, weight=1)
+
+        self.title_label.grid(row=0, column=0, pady=(0, 8), sticky="w")
+
+        # Top panel
+        self.top_panel.grid(row=1, column=0, sticky="ew", pady=(0, 6))
+        self.top_panel.columnconfigure(0, weight=1)
+        self.top_panel.columnconfigure(1, weight=1)
+
+        # Left: Run R Analysis
+        self.r_frame.grid(row=0, column=0, sticky="nsew", padx=(0, 4))
+        ttk.Label(self.r_frame, text="Script:").grid(row=0, column=0, sticky="w", pady=2)
+        self.script_combo.grid(row=0, column=1, columnspan=2, sticky="ew", padx=(4, 0), pady=2)
+        self.run_r_btn.grid(row=1, column=1, sticky="ew", padx=(4, 2), pady=(6, 0))
+        self.stop_r_btn.grid(row=1, column=2, sticky="ew", padx=(2, 0), pady=(6, 0))
+        self.r_frame.columnconfigure(1, weight=1)
+
+        # Right: View Results
+        self.view_frame.grid(row=0, column=1, sticky="nsew", padx=(4, 0))
+        self.rdata_label.grid(row=0, column=0, sticky="w", pady=2)
+        self.rdata_combo.grid(row=0, column=1, sticky="ew", padx=(4, 4), pady=2)
+        self.view_rdata_btn.grid(row=0, column=2, pady=2)
+        self.csv_label.grid(row=1, column=0, sticky="w", pady=2)
+        self.csv_combo.grid(row=1, column=1, sticky="ew", padx=(4, 4), pady=2)
+        self.view_csv_btn.grid(row=1, column=2, pady=2)
+        self.view_frame.columnconfigure(1, weight=1)
+
+        # Notebook
+        self.notebook.grid(row=2, column=0, sticky="nsew")
+
+        for tab, text_widget in [(self.r_output_tab, self.r_output_text),
+                                  (self.results_tab, self.results_text)]:
+            tab.columnconfigure(0, weight=1)
+            tab.rowconfigure(0, weight=1)
+            text_widget.grid(row=0, column=0, sticky="nsew")
+
+        # Status bar
+        self.status_label.grid(row=3, column=0, sticky="ew", pady=(4, 0))
+        
+    # â”€â”€ ACTION HANDLERS â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    def on_run_r(self):
+        """Run the selected R script."""
+        selected = self.script_var.get()
+        if selected not in self.r_scripts:
+            messagebox.showerror("Error", "Please select a valid R script")
+            return
+        script_path = self.r_scripts[selected]
+        if not os.path.exists(script_path):
+            messagebox.showerror("Error", f"R script not found:\n{script_path}")
+            return
+        self._run_r_script(script_path)
+
+    def stop_r(self):
+        """Terminate the running R process."""
+        if self.r_process and self.r_process.poll() is None:
+            self.r_process.terminate()
+            self.status_var.set("R process stopped")
+        self.run_r_btn.config(state="normal")
+        self.stop_r_btn.config(state="disabled")
+
+    def on_view_rdata(self):
+        """View an RData file in the Results Viewer tab."""
+        selected = self.rdata_var.get()
+        rdata_path = self.rdata_files.get(selected)
+        if not rdata_path or not os.path.exists(rdata_path):
+            messagebox.showerror("Error", f"File not found:\n{rdata_path}")
+            return
+        if not PYREADR_AVAILABLE:
+            messagebox.showerror("Error", "pyreadr is not installed in the current environment.")
+            return
+        try:
+            self.status_var.set(f"Loading {os.path.basename(rdata_path)} ...")
+            self.root.update()
+            result = pyreadr.read_r(rdata_path)
+            txt = self.results_text
+            txt.delete(1.0, tk.END)
+            txt.insert(tk.END, f"FILE: {rdata_path}\n")
+            txt.insert(tk.END, f"Objects: {list(result.keys())}\n")
+            txt.insert(tk.END, "=" * 70 + "\n\n")
+            for key, data in result.items():
+                txt.insert(tk.END, f"â”€â”€ {key} â”€â”€\n")
+                if isinstance(data, pd.DataFrame):
+                    txt.insert(tk.END, f"DataFrame  shape={data.shape}  columns={list(data.columns)}\n\n")
+                    txt.insert(tk.END, data.to_string(max_rows=40) + "\n\n")
+                elif isinstance(data, pd.Series):
+                    txt.insert(tk.END, f"Series  len={len(data)}\n{data.to_string()}\n\n")
+                else:
+                    txt.insert(tk.END, f"{type(data).__name__}: {str(data)[:1000]}\n\n")
+            self.notebook.select(self.results_tab)
+            self.status_var.set(f"Loaded {os.path.basename(rdata_path)}")
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to load RData file:\n{e}")
+            self.status_var.set("Error loading RData")
+
+    def on_view_csv(self):
+        """View a CSV results file in the Results Viewer tab."""
+        selected = self.csv_var.get()
+        csv_path = self.csv_results.get(selected)
+        if not csv_path or not os.path.exists(csv_path):
+            messagebox.showerror("Error", f"File not found:\n{csv_path}")
+            return
+        try:
+            self.status_var.set(f"Loading {selected} ...")
+            self.root.update()
+            df = pd.read_csv(csv_path)
+            txt = self.results_text
+            txt.delete(1.0, tk.END)
+            txt.insert(tk.END, f"FILE: {csv_path}\n")
+            txt.insert(tk.END, f"Shape: {df.shape[0]} rows x {df.shape[1]} columns\n")
+            txt.insert(tk.END, f"Columns: {list(df.columns)}\n")
+            txt.insert(tk.END, "=" * 70 + "\n\n")
+            txt.insert(tk.END, df.to_string() + "\n")
+            self.notebook.select(self.results_tab)
+            self.status_var.set(f"Loaded {selected}  ({df.shape[0]} rows x {df.shape[1]} cols)")
+        except Exception as e:
+            messagebox.showerror("Error", f"Failed to load CSV:\n{e}")
+            self.status_var.set("Error loading CSV")
+
+    # â”€â”€ R EXECUTION â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€â”€
+
+    def _find_rscript(self):
+        """Locate the Rscript executable."""
+        rscript = shutil.which("Rscript") or shutil.which("Rscript.exe")
+        if rscript:
+            return rscript
+        for pattern in [r"C:\Program Files\R\R-*\bin\Rscript.exe",
+                        r"C:\Program Files (x86)\R\R-*\bin\Rscript.exe"]:
+            matches = sorted(glob.glob(pattern), reverse=True)
+            if matches:
+                return matches[0]
+        return None
+
+    def _run_r_script(self, script_path):
+        """Run an R script and stream output to the R Output tab."""
+        rscript_exe = self._find_rscript()
+        if not rscript_exe:
+            messagebox.showerror("Error", "Rscript not found.\nInstall R and make sure Rscript is on your PATH.")
+            return
+
+        self.r_output_text.delete(1.0, tk.END)
+        self.r_output_text.insert(tk.END, f"Rscript: {rscript_exe}\n")
+        self.r_output_text.insert(tk.END, f"Script:  {script_path}\n")
+        self.r_output_text.insert(tk.END, "=" * 70 + "\n\n")
+        self.notebook.select(self.r_output_tab)
+        self.status_var.set(f"Running {os.path.basename(script_path)} ...")
+        self.run_r_btn.config(state="disabled")
+        self.stop_r_btn.config(state="normal")
+
+        def worker():
+            try:
+                self.r_process = subprocess.Popen(
+                    [rscript_exe, script_path],
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.STDOUT,
+                    universal_newlines=True,
+                    bufsize=1,
+                    cwd=str(PROJECT_ROOT),
+                )
+                for line in iter(self.r_process.stdout.readline, ""):
+                    if line:
+                        self.root.after(0, self._append_r_output, line)
+                self.r_process.wait()
+                rc = self.r_process.returncode
+                msg = "Completed successfully." if rc == 0 else f"Exited with code {rc}."
+                self.root.after(0, self._append_r_output, "\n" + "=" * 70 + "\n" + msg + "\n")
+                self.root.after(0, lambda: self.status_var.set(f"R script {msg}"))
+            except Exception as e:
+                self.root.after(0, lambda: messagebox.showerror("Error", f"R execution failed:\n{e}"))
+                self.root.after(0, lambda: self.status_var.set("R execution failed"))
+            finally:
+                self.root.after(0, lambda: self.run_r_btn.config(state="normal"))
+                self.root.after(0, lambda: self.stop_r_btn.config(state="disabled"))
+
+        self.r_output_thread = threading.Thread(target=worker, daemon=True)
+        self.r_output_thread.start()
+
+    def _append_r_output(self, text):
+        self.r_output_text.insert(tk.END, text)
+        self.r_output_text.see(tk.END)
+        self.root.update_idletasks()
+
+
+
+
+
+def main():
+    """Main function."""
+    root = tk.Tk()
+    app = SimpleGUI(root)
+    
+    # Center window
+    root.update_idletasks()
+    x = (root.winfo_screenwidth() // 2) - (root.winfo_width() // 2)
+    y = (root.winfo_screenheight() // 2) - (root.winfo_height() // 2)
+    root.geometry(f"+{x}+{y}")
+    
+    root.mainloop()
+
+if __name__ == "__main__":
+    main()
